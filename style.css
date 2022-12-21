@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(40, 53, 65);
+    width: 100%;
+    height: 100px;
+    padding-left: 3.5%;
+}
+
+.name{
+    width: 50%;
+    text-align: left;
+    line-height: 50px;
+    padding: 25px 0;
+}
+
+h1{
+    width: 60%;
+    color: whitesmoke;
+    letter-spacing: 3px;
+    font-size: 50px;
+}
+
+nav{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2%;
+}
+
+nav a{
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 0 1px;
+    height: 30px;
+    font-weight: 700;
+    padding: 0  2%;
+}
+
+nav a:hover{
+    background: rgb(45, 83, 125);
+    height: 100px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.subheader{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(artificial-intelligence-g32a9be75a_1920.jpg);
+    height: 200px;
+}
+
+#subheadertext{
+    background-color: rgb(40, 53, 65);
+    color: whitesmoke;
+    text-align: center;
+    margin: 130px 20px 20px;
+    padding-top: 10px;
+}
+
