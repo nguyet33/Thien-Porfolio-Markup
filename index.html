@@ -4,44 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Thien Nguyen Porfolio</title>
+    <title>Thien's portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
 </head>
-
 <body>
+
+
+<!-- Header with links that directs to section of the website -->
     <header>
-
-        <div class="name">
-            <h1>Thien Nguyen</h1>
-        </div>
-        
+        <h1>Thien Nguyen</h1>
         <nav>
-            <a href="#about-link">About Me</a>
-            <a href="#work-link">Work</a>
-            <a href="#contact-link">Contact Me</a>
-            <a href="#resume-link">Resume</a>
+            <ul>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contactme">Contact me</a></li>
+                <li>Resume</li>
+            </ul>
         </nav>
-
     </header>
-    
-    
-    <Main>
-        <div class="subheader">
-            <h2 id="subheadertext">Why You Should Hire Me!</h2> 
-        </div>
 
-        <section id="about-me">
-            <h2 id="about-link"
-            class="header">About <br>Me</h2>
-            </h2>
+
+
+
+
+    <main>
+        <!-- A figure that with a title of what the website is -->
+        <figure id="image1" title="background for section">
+            <h2> My First Website</h2>
+        </figure>
+
+        <!-- about me section on the side -->
+        <section class="section1" id="aboutme">
+            <aside>
+            <h2>About me</h2>
+            </aside>
+            <p>My Name is Thien Nguyen. This project is to create a website or a portfolio to showcase the projects i have worked on.
+                I  have one dog named Cozmo. My favorite sports are volleyball and snowboarding. 
+            </p>
+        </section>
+
+        <!-- Project section that contain img and links to projects -->
+        <section class="section2" id="work">
+            <!-- Project title on the side -->
+            <aside>
+            <h2>Projects</h2>
+            </aside>
+            <!-- Project 1 -->
+             <div class= "container">
+                <div class=" row">
+                    <div class="card1" id="image" title="background image for project1">
+                        <div class="title">
+                            <h3><a href="https://nguyet33.github.io/Horiseon-Refractor-Code-P1/">Project 1</a></h3>
+                            <p><a href="https://github.com/nguyet33/Horiseon-Refractor-Code-P1/settings/pages">Html/CS</a></p>
+                        </div>
+                    </div>
+            </div>
+            <!-- project 2-4 are here -->
+            <div class="row">
+                <div class="card2" id="image1" title="background image for project2">
+                    <div class="title2">
+                        <h3>Project 2 </h3>
+                        <p>COMING SOON! </p>
+                    </div>
+                </div>
+                <div class="card2" id="image2" title="background image for project3">
+                    <div class="title2">
+                    <h3>project 3 </h3>
+                    <p>COMING SOON! </p>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="card2" id="image3" title="background image for project4">
+                        <div class="title2">
+                            <h3>project 4 </h3>
+                            <p>COMING SOON! </p>
+                        </div>
+                    </div>
+                    <div class="card2" id="image4" title="background image for project5">
+                        <div class="title2">
+                            <h3>project 5 </h3>
+                            <p>COMING SOON! </p>  
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Contact me section -->
+        <section class="section3" id="contactme">
+            <!-- contact me title on side -->
+            <aside><h2>Contact me</h2></aside>
+            <nav>
+                <ul>
+                    <li>(206) 326-8126</li>
+                    <li><a href="mailto:tdnguyet33@gmail.com"> Email</a></li>
+                    <li><a href="https://github.com/nguyet33">Github</a></li>
+                </ul>
+            </nav>
 
         </section>
 
+    </main>
 
-
-
-
-
-    </Main>
 </body>
 </html>

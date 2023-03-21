@@ -1,76 +1,268 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a:link{
+    color:white;
+}
+
+a:visited{
+    color:white;
 }
 
 header{
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(40, 53, 65);
-    width: 100%;
-    height: 100px;
-    padding-left: 3.5%;
+    align-content: flex-start;
+    min-height: 5vh;
+    background-color:moccasin;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.name{
-    width: 50%;
-    text-align: left;
-    line-height: 50px;
-    padding: 25px 0;
+header h1{
+    font-size: 40px;
+    width:300px;
+    height: 120px;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 20px;
 }
 
-h1{
-    width: 60%;
-    color: whitesmoke;
-    letter-spacing: 3px;
-    font-size: 50px;
+header nav ul{
+   display: flex;
+   align-items: flex-end;
+   list-style: none;
+  
 }
 
-nav{
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 2%;
-}
-
-nav a{
-    color: whitesmoke;
+header nav li{
+    margin:30px;
+    position:relative;
+    right:10%;
+    border-bottom: 3px solid white;
+    font-weight: bold;
     font-size: 20px;
-    margin: 0 1px;
-    height: 30px;
-    font-weight: 700;
-    padding: 0  2%;
-}
-
-nav a:hover{
-    background: rgb(45, 83, 125);
-    height: 100px;
+    color:white
 }
 
 main{
+    min-height:80vh;
+    background-color: cornflowerblue;
+}
+
+figure{
+    height:200px;
+}
+
+figure h2{
+    width:240px;
+    height:80px;
+    padding: 20px;
+    position: relative;;
+    background-color: cornflowerblue;
+    color:white;
+    left:85%;
+    top:40%;
+    border: 4px solid moccasin;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* This creates the section "about me", "project" and "contact me" into a row so the title can display on the left
+while the content is on the right */
+
+.section1, .section2, .section3{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:10px;
 }
 
+/* this formats the aside section so it align correctly with each other */
 
-.subheader{
+.section1 aside, .section2 aside, .section3 aside{
     display: flex;
-    justify-content: flex-end;
-    background-image: url(artificial-intelligence-g32a9be75a_1920.jpg);
-    height: 200px;
+    justify-content:flex-end;
+    border-right: 4px solid moccasin;
+    padding:20px;
+    color:white;
+    width:15%;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 
-#subheadertext{
-    background-color: rgb(40, 53, 65);
-    color: whitesmoke;
-    text-align: center;
-    margin: 130px 20px 20px;
-    padding-top: 10px;
+.section1 p{
+    width:85%;
+    font-size: 20px;
+    padding:20px;
+    margin:10px;
+    color: white;
+    margin-left:30px;
 }
 
+.section2 div{
+    width: 85%;
+    margin-left:20px;
+
+}
+
+.section3 nav{
+    margin-left:30px;
+    width:85%
+}
+
+.section3 nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.section3 nav ul li{
+    border-bottom:4px solid moccasin;
+    margin:30px;
+
+}
+
+/*creates a wrap style for the boxes in project  */
+
+.container{
+    margin:10px
+}
+
+.row{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin: 10px;
+    object-fit: cover;
+}
+
+/* sets the position and the dimensions of the projext squares */
+.card1{
+    background: azure;
+    position: relative;
+    flex:1;
+    max-width: 100%;
+    height: 300px;
+    margin: 10px;
+    border: 5px  solid moccasin;
+    opacity: 50%;
+
+}
+
+.card2{
+    background: azure;
+    position: relative;
+    flex: 1;
+    max-width: 100% ;
+    height: 210px;
+    margin: 10px;
+    opacity: 50%;
+    border: 5px  solid moccasin;
+}
+
+
+
+/* Title box in the project box */
+
+.title{
+    border: 5px solid moccasin;
+    max-width: 120px;
+    position: relative;
+    background-color: cornflowerblue;
+    top:60%;
+    padding:10px;
+    right:25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white
+}  
+
+.title2{
+    border: 5px solid moccasin;
+    max-width: 120px;
+    position: relative;
+    background-color: cornflowerblue;
+    top:50%;
+    padding:10px;
+    right:25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white
+}
+.title p, .title2 p{
+    font-size: 15px;
+}
+
+
+
+/* Image location for all images */
+#image1{
+    background-image:url(./5akxfhe066q41.jpg);
+    background-size: cover;
+    
+}
+
+#image2{
+    background-image:url(./picture.jpg);
+    background-size: cover;
+   
+}
+
+#image3{
+    background-image:url(./picture\ 1.jpg);
+    background-size: cover;
+    
+}
+
+#image4{
+    background-image:url(./picture\ 2.jpg);
+    background-size: cover;
+    
+}
+
+#image{
+    background-image:url(./Header.jpg);
+    background-size: cover;
+    
+}
+
+
+.card1:hover, .card2:hover{
+    opacity:100;
+}
+
+/* shrink section in to column when browser shrinks to a smaller size */
+
+@media (max-width:900px){
+
+    header{
+        justify-content: center;
+    
+    }
+    .card2{
+        flex:100%;
+        max-width: 900x;
+    }
+
+    .section1, .section2, .section3{
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+    .section1 aside, .section2 aside, .section3 aside{
+        display: flex;
+        justify-content:center;
+        border-bottom: 2px solid white;
+        border-right: 0px;
+        color:white;
+        width:100%
+    
+}
+
+}
